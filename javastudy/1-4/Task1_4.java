@@ -7,13 +7,13 @@
  * 　パスワード：pass
  * 本課題では、すべての定数(合計６種類)を使いつつ、if文の使い方に慣れていきましょう！
  * 問① 〜 問⑤まで回答お願いします！
- *;
+ *
  */
 public class Task1_4 {
 
   // 定数（アカウント情報）
-  final String name = "alice";
-  final String pass = "pass";// ① 登録されている名前とパスワードを定数で定義してください。
+  private static final String name = "alice";
+  private static final String pass = "pass";// ① 登録されている名前とパスワードを定数で定義してください。
 
   // 定数（メッセージ）
   private static final String CONST_MSG_SUCCESS = "ログイン成功です。";
@@ -35,10 +35,10 @@ public class Task1_4 {
       if (name.equals("alice") && pass.equals("pass")){
         System.out.println("ログイン成功です");// ② 名前が「 alice 」、パスワードが「 pass 」であった場合、「 ログイン成功です 」と出力してください。
       
-      } else if (name == "alice" && pass !="pass"){
+      } else if (name.equals("alice") || pass.equals("piss")){
         System.out.println("パスワードに誤りがあります");// ③ 名前のみ正しい場合、「 パスワードに誤りがあります。 」と出力してください。
 
-      } else if (name != "name" && pass == "pass"){
+      } else if (name.equals("alace") || pass.equals("pass")){
         System.out.println("名前に誤りがあります");// ④ パスワードのみ正しい場合、「 名前に誤りがあります。 」と出力してください。
 
       } else {
