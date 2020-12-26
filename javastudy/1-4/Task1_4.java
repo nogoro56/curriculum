@@ -33,16 +33,16 @@ public class Task1_4 {
        String name = "alice";
        String pass = "pass";
       if (name.equals("alice") && pass.equals("pass")){
-        System.out.println("ログイン成功です");// ② 名前が「 alice 」、パスワードが「 pass 」であった場合、「 ログイン成功です 」と出力してください。
+        System.out.println(CONST_MSG_SUCCESS);// ② 名前が「 alice 」、パスワードが「 pass 」であった場合、「 ログイン成功です 」と出力してください。
       
-      } else if (name == "alice" && pass !="pass"){
-        System.out.println("パスワードに誤りがあります");// ③ 名前のみ正しい場合、「 パスワードに誤りがあります。 」と出力してください。
+      } else if (name.equals ("alice")){
+        System.out.println(CONST_MSG_ERROR_NAME);// ③ 名前のみ正しい場合、「 パスワードに誤りがあります。 」と出力してください。
 
-      } else if (name != "name" && pass == "pass"){
-        System.out.println("名前に誤りがあります");// ④ パスワードのみ正しい場合、「 名前に誤りがあります。 」と出力してください。
+      } else if (pass.equals ("pass")){
+        System.out.println(CONST_MSG_ERROR_PASS);// ④ パスワードのみ正しい場合、「 名前に誤りがあります。 」と出力してください。
 
       } else {
-        System.out.println("入力情報に誤りがあります"); // ⑤ 名前もパスワードも間違っていた場合は、「 入力情報に誤りがあります。 」と出力してください。
+        System.out.println(CONST_MSG_ERROR_INPUT); // ⑤ 名前もパスワードも間違っていた場合は、「 入力情報に誤りがあります。 」と出力してください。
       }
   }
 
