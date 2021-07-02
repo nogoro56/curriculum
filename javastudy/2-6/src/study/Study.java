@@ -28,9 +28,12 @@ public class Study {
 
         // 問② 「(Calendar.MONTH) + 数値」の処理は、想定していない値となる可能性があります。
         // その理由をコメントへ記述してください。
-        // [getにしてしまうとただ月の値に＋1にしているだけなので12より上の数字になる場合がある]
+        // [getにしてしまうとただ月の値に＋2にしているだけなので12より上の数字になる場合がある]
+        System.out.println(calendar.get(Calendar.YEAR));
+        System.out.println(calendar.get(Calendar.MONTH) + 1);
+        System.out.println(calendar.get(Calendar.DATE));
         System.out.println(calendar.get(Calendar.YEAR) + 1);
-        System.out.println(calendar.add(Calendar.MONTH,2));
+        System.out.println(calendar.get(Calendar.MONTH) + 3);
         System.out.println(calendar.get(Calendar.DATE) + 15);
         // 問③ 上記の「calendar」を使用し、本日から1年2ヶ月15日先の日付を表示しなさい。
         // - この課題に関しては課題実施日によって結果が異なりますので、Wiki課題の画像とは結果が異なります。
