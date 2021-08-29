@@ -20,7 +20,7 @@
   width: 140px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .header-main-blok-item{
   height: 40px;
@@ -48,6 +48,10 @@
 .blok{
   height: 170px;
   width: 150px;
+  margin: 40px 60px 40px 40px;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
 }
 .contents-right-blok{
   height: 50px;
