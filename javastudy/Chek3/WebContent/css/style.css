@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.header{
+	background-color: gray;
+	padding: 10px;
+	display: inline-block;
+}
+.login{
+	color: white;
+	padding: 10px;
+}
+.pass{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+}
+table{
+	border-collapse: collapse;
+}
+.noborder {
+ 	border: 0px none;
+}
+.footer{
+	background-color: gray;
+	display: inline-block;
+}
+.hoge{
+	color: white;
+	padding: 10px;
+}
