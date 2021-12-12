@@ -4,20 +4,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="css/style.css">
 <title>Insert title here</title>
 </head>
 <body>
-	<div class=wrapper>
+	<div class="wrapper">
 		<%@ include file="header.jsp"%>
-		<div class=contents>
-			<div class=pass>
+		<div class="contents">
+			<div class="pass">
 				<table>
-					<tr>
-						<td class=noborder>name</td><td class=blank></td>
-						<td class=noborder>id</td><td class=blank></td>
-					</tr>
-				</table>
+				  <tr>
+				   <th>name</th>
+				   <th><input type="text"></th>
+				  </tr>
+				  <tr>
+				   <th>id</th>
+				   <th><input type="text"></th>
+				  </tr>
+				 </table>
 			</div>
 		</div>
 		<%@ include file="footer.jsp"%>
